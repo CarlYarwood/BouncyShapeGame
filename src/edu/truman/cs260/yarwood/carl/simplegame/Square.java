@@ -3,11 +3,11 @@ package edu.truman.cs260.yarwood.carl.simplegame;
 import java.awt.Color;
 import java.awt.Graphics2D;
 import java.awt.Point;
-import java.awt.geom.Ellipse2D;
+import java.awt.geom.Rectangle2D;
 
-public class Circle extends DraggableShape {
+public class Square extends DraggableShape {
 
-	public Circle(int max_initial_x_pos, int max_initial_y_pos) {
+	public Square(int max_initial_x_pos, int max_initial_y_pos) {
 		super(max_initial_x_pos, max_initial_y_pos);
 		// TODO Auto-generated constructor stub
 	}
@@ -27,7 +27,7 @@ public class Circle extends DraggableShape {
 	public void draw(Graphics2D g2) {
 		// TODO Auto-generated method stub
 		g2.setColor(Color.BLACK);
-		g2.fill(new Ellipse2D.Double(super.getShapeCurrentX(), super.getShapeCurrentY(), super.getShapeWidth(), super.getShapeHeight()));
+		g2.fill(new Rectangle2D.Double(super.getShapeCurrentX(),super.getShapeCurrentY(),super.getShapeWidth(),super.getShapeHeight()));
 	}
 
 }
